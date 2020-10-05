@@ -27,8 +27,8 @@ namespace Deserializacao
             foreach (var item in mapa.Pontos)
             {
                 Console.WriteLine(item.X);
-                Console.WriteLine("===========================================================");
                 Console.WriteLine(item.Y);
+                Console.WriteLine("===========================================================");
             }
 
             Console.ReadKey();
