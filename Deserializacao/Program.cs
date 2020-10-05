@@ -13,11 +13,11 @@ namespace Deserializacao
     {
         static void Main(string[] args)
         {
-            //alterar caminho do arquivo .Dat
+            //alterar caminho do arquivo .Dat para o que eu adicionei no projeto
             FileStream fs = new FileStream(@"C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projeto teste\SUGESTÃO SESSÃO 4 SC\DATA FILES\mapeamento.dat", FileMode.Open);
             // Cria um objeto BinaryFormatter para realizar a dessarialização
             BinaryFormatter bf = new BinaryFormatter();
-            //É preciso adicionar uma referência da dll BibliotecaMapa para que a desserialização funcione
+            //É preciso adicionar uma referência da dll BibliotecaMapa para que a desserialização funcione. A dll ta na pasta do projeto
             Mapa mapa =(Mapa)bf.Deserialize(fs);
 
             // fecha o arquivo
