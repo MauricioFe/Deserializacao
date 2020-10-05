@@ -51,6 +51,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="mapeamento.dat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BibliotecaMapa.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
