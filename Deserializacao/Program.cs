@@ -35,7 +35,8 @@ namespace Deserializacao
             //Tamanho da matriz de ligações = 1.671.849
             //numero de colunas e linhas = 1.293
             //trabalha aparentemente de forma binária. quando eu coloquei um for de tamanho 10 eu consegui identificar 
-            //Valores 0 e 5, mas como se trabalha com muitos dados não deu para explorar tudo.
+            //Valores 0 e 5, mas como se trabalha com muitos dados não deu para explorar tudo. afinal o length é de mais de um milhão
+            //Eu consegui analisar até bem o que chega mas achei bem complexo para entender como funciona de verdade.
             Console.WriteLine(mapa.Ligacoes.Length);
            
 
