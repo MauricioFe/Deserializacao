@@ -24,60 +24,58 @@ namespace Deserializacao
             // fecha o arquivo
             fs.Close();
             //Aqui é um teste direto nos pontos a partir de calculos que fizemos sem pegar o ponto médio de forma dinâmica
-            Point pontoX = new Point(79, 149);
-            Point pontoY = new Point(479, 388);
-            Console.WriteLine(mapa.Pontos[425].X + "\n" + mapa.Pontos[425].Y);
-            Console.WriteLine("==========================================");
-            Console.WriteLine(mapa.Pontos[687].X + "\n" + mapa.Pontos[687].Y);
-            Console.WriteLine("==========================================");
-            Console.WriteLine(mapa.Ligacoes[425, 687]);
-            Console.WriteLine("==========================================");
-            Console.WriteLine(mapa.Pontos.Count);
-            Console.WriteLine("==========================================");
+            Console.WriteLine("Cordenadas do ponto médio 10 de uma rua aleatória: " + mapa.Pontos[10].X + " - " + mapa.Pontos[10].Y);
+            Console.WriteLine("===================================================================================================");
+            Console.WriteLine("Cordenadas do ponto médio 100 de uma rua aleatória: " + mapa.Pontos[100].X + " - " + mapa.Pontos[100].Y);
+            Console.WriteLine("===================================================================================================");
+            Console.WriteLine("Distância para percorrer do ponto médio 10 até o 100: " + mapa.Ligacoes[10, 100]);
+            Console.WriteLine("===================================================================================================");
+            Console.WriteLine("Número de potos no mapa: " + mapa.Pontos.Count);
+            Console.WriteLine("===================================================================================================");
             //-----------------------------------------------------------------------------------------------------------
 
             //RUA A
 
             //-----------------------------------------------------------------------------------------------------------
             //Pegando o index da rua a partir do nome dela
-            var indexRuaA = mapa.Ruas.FindIndex(r => r.Nome == "Rua Vitor");
+            var indexRuaA = mapa.Ruas.FindIndex(r => r.Nome == "Rua almeida barros");
             Console.WriteLine("Index da Rua A: " + indexRuaA);
             Console.WriteLine("Localizando a Rua A no mapa: " + mapa.Ruas[indexRuaA].Nome);
-            Console.WriteLine("==========================================");
             //Pegando o ponto médio da rua A
             var round = mapa.Ruas[indexRuaA].Pontos.Count / 2;
             var pontoMedioRuaA = Math.Abs(round);
-            Console.WriteLine("Ponto Médio da rua a: " + pontoMedioRuaA);
+            Console.WriteLine("Ponto Médio da rua A: " + pontoMedioRuaA);
             //Mostrando o ponto x e y que se refere ao ponto médio da rua, ou seja as cordenadas do ponto médio da rua A
-            Console.WriteLine("Cordenadas do ponto médio da rua B: " + mapa.Ruas[indexRuaA].Pontos[pontoMedioRuaA].X + " - " + mapa.Ruas[indexRuaA].Pontos[pontoMedioRuaA].Y);
-            Console.WriteLine("==========================================");
+            Console.WriteLine("Cordenadas do ponto médio da rua A: " + mapa.Ruas[indexRuaA].Pontos[pontoMedioRuaA].X + " - " + mapa.Ruas[indexRuaA].Pontos[pontoMedioRuaA].Y);
             //Efetuo uma busca pela adjacência desses pontos
             var adjacenciaA = mapa.Pontos.FindIndex(p => p.X == mapa.Ruas[indexRuaA].Pontos[pontoMedioRuaA].X && p.Y == mapa.Ruas[indexRuaA].Pontos[pontoMedioRuaA].Y);
             //Mostro a Adjacência desses pontos
             Console.WriteLine("Adjacencia A:" + adjacenciaA);
-            Console.WriteLine("==========================================");
+            Console.WriteLine("===================================================================================================");
             //-----------------------------------------------------------------------------------------------------------
 
             //RUA B
 
             //-----------------------------------------------------------------------------------------------------------
             //Pegando o index da rua a partir do nome dela
-            var indexRuaB = mapa.Ruas.FindIndex(r => r.Nome == "Rua fagundes");
+            var indexRuaB = mapa.Ruas.FindIndex(r => r.Nome == "Rua Kakashi");
             Console.WriteLine("Index da Rua B: " + indexRuaB);
             Console.WriteLine("Localizando a Rua B no mapa: " + mapa.Ruas[indexRuaB].Nome);
-            Console.WriteLine("==========================================");
             //Pegando o ponto médio da rua B
             round = mapa.Ruas[indexRuaB].Pontos.Count / 2;
             var pontoMedioRuaB = Math.Abs(round);
             //Mostrando o ponto x e y que se refere ao ponto médio da rua, ou seja as cordenadas do ponto médio da rua B
             Console.WriteLine("Cordenadas do ponto médio da rua B: " + mapa.Ruas[indexRuaB].Pontos[pontoMedioRuaB].X + " - " + mapa.Ruas[indexRuaB].Pontos[pontoMedioRuaB].Y);
-            Console.WriteLine("==========================================");
             //Efetuo uma busca pela adjacência desses pontos
             var adjacenciaB = mapa.Pontos.FindIndex(p => p.X == mapa.Ruas[indexRuaB].Pontos[pontoMedioRuaB].X && p.Y == mapa.Ruas[indexRuaB].Pontos[pontoMedioRuaB].Y);
             Console.WriteLine("Adjacencia B:" + adjacenciaB);
-            Console.WriteLine("==========================================");
-
+            Console.WriteLine("===================================================================================================");
+            //Mostrando o caminho mais curto entre as duas ruas
             Console.WriteLine("Resultado da busca na matrix para saber o caminho mais curto: " + mapa.Ligacoes[adjacenciaA, adjacenciaB]);
+
+
+
+
             Console.ReadKey();
         }
     }
