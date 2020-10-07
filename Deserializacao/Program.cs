@@ -24,9 +24,9 @@ namespace Deserializacao
             fs.Close();
             // exibe o objeto desserializada
             //Aqui temos um exeplos para mostrar alguns dados que chegam do arquivo. Pode ser alterado para a exibição de novos dados
-            for (int i = 0; i < 1293; i++)
+            for (int i = 0; i < 3; i++)
             {
-                for (int j = 0; j < 1293; j++)
+                for (int j = 0; j < 3; j++)
                 {
                     Console.Write(mapa.Ligacoes[i,j] + "\t");
                 }
