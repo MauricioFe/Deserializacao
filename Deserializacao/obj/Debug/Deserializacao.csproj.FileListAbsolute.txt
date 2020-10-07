@@ -15,3 +15,4 @@ C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consu
 C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\Deserializacao\Deserializacao\obj\Debug\Deserializacao.csproj.CopyComplete
 C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\Deserializacao\Deserializacao\obj\Debug\Deserializacao.exe
 C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\Deserializacao\Deserializacao\obj\Debug\Deserializacao.pdb
+C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\Deserializacao\Deserializacao\bin\Debug\BibliotecaMapa.dll

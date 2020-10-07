@@ -24,13 +24,23 @@ namespace Deserializacao
             fs.Close();
             // exibe o objeto desserializada
             //Aqui temos um exeplos para mostrar alguns dados que chegam do arquivo. Pode ser alterado para a exibição de novos dados
-            foreach (var item in mapa.Pontos)
+            for (int i = 0; i < 1293; i++)
             {
-                Console.WriteLine(item.X);
-                Console.WriteLine(item.Y);
-                Console.WriteLine("===========================================================");
+                for (int j = 0; j < 1293; j++)
+                {
+                    Console.Write(mapa.Ligacoes[i,j] + "\t");
+                }
+                Console.WriteLine();
             }
+            //Tamanho da matriz de ligações = 1.671.849
+            //numero de colunas e linhas = 1.293
+            //trabalha aparentemente de forma binária. quando eu coloquei um for de tamanho 10 eu consegui identificar 
+            //Valores 0 e 5, mas como se trabalha com muitos dados não deu para explorar tudo.
+            Console.WriteLine(mapa.Ligacoes.Length);
+           
 
+            int[,] bacon = new int [1293,1293];
+            Console.WriteLine(bacon.Length);
             Console.ReadKey();
         }
     }
