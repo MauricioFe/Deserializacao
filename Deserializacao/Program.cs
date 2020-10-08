@@ -38,7 +38,7 @@ namespace Deserializacao
 
             //-----------------------------------------------------------------------------------------------------------
             //Pegando o index da rua a partir do nome dela
-            var indexRuaA = mapa.Ruas.FindIndex(r => r.Nome == "Rua almeida barros");
+            var indexRuaA = mapa.Ruas.FindIndex(r => r.Nome == "Rua fagundes");
             Console.WriteLine("Index da Rua A: " + indexRuaA);
             Console.WriteLine("Localizando a Rua A no mapa: " + mapa.Ruas[indexRuaA].Nome);
             //Pegando o ponto médio da rua A
@@ -71,11 +71,7 @@ namespace Deserializacao
             Console.WriteLine("Adjacencia B:" + adjacenciaB);
             Console.WriteLine("===================================================================================================");
             //Mostrando o caminho mais curto entre as duas ruas
-            Console.WriteLine("Resultado da busca na matrix para saber o caminho mais curto: " + mapa.Ligacoes[adjacenciaA, adjacenciaB]);
-
-
-
-
+            Console.WriteLine("Resultado da busca na matriz para saber o caminho mais curto: " + mapa.Ligacoes[adjacenciaA, adjacenciaB]);
             Console.ReadKey();
         }
     }

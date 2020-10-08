@@ -7,3 +7,12 @@ C:\Users\mauri\Desktop\Deserializacao\Deserializacao\obj\Debug\Deserializacao.ex
 C:\Users\mauri\Desktop\Deserializacao\Deserializacao\obj\Debug\Deserializacao.pdb
 C:\Users\mauri\Desktop\Deserializacao\Deserializacao\bin\Debug\BibliotecaMapa.dll
 C:\Users\mauri\Desktop\Deserializacao\Deserializacao\obj\Debug\Deserializacao.csproj.CopyComplete
+C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\Deserializacao\Deserializacao\bin\Debug\Deserializacao.exe.config
+C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\Deserializacao\Deserializacao\bin\Debug\Deserializacao.exe
+C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\Deserializacao\Deserializacao\bin\Debug\Deserializacao.pdb
+C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\Deserializacao\Deserializacao\bin\Debug\BibliotecaMapa.dll
+C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\Deserializacao\Deserializacao\obj\Debug\Deserializacao.csprojAssemblyReference.cache
+C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\Deserializacao\Deserializacao\obj\Debug\Deserializacao.csproj.CoreCompileInputs.cache
+C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\Deserializacao\Deserializacao\obj\Debug\Deserializacao.csproj.CopyComplete
+C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\Deserializacao\Deserializacao\obj\Debug\Deserializacao.exe
+C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\Deserializacao\Deserializacao\obj\Debug\Deserializacao.pdb
